@@ -10,10 +10,6 @@ public class TestService {
         return "Public Content.";
     }
 
-//    @PreAuthorize("hasRole('USER') ")
-//    public String generateUserContent() {
-//        return "User Content.";
-//    }
     @PreAuthorize("hasRole('USER')")
     public String generateUserContent() {
     return "User Content.";
